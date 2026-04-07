@@ -1,0 +1,10 @@
+# Ignore a specific file
+secret.txt
+
+# Ignore a specific folder
+__pycache__/
+venv/
+# Ignore by extension
+*.log
+*.env
+*.pyc
