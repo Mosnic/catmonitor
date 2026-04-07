@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm \"//spicysnickers/WalterP/catmonitor/db/store_old.py\")",
+      "Bash(rm \"//spicysnickers/WalterP/catmonitor/tools/processExisting.py\")",
+      "Bash(mv \"//spicysnickers/WalterP/catmonitor/tools/test_single,py.py\" \"//spicysnickers/WalterP/catmonitor/tools/test_single.py\")",
+      "Read(///spicysnickers/WalterP/catmonitor/db/**)",
+      "Read(///spicysnickers/WalterP/catmonitor/tools/**)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\(''agent/reflective_tools.py''\\).read\\(\\)\\); print\\(''OK''\\)\")",
+      "Bash(sqlite3 //spicysnickers/WalterP/catmonitor/data/catmonitor.db \".schema\")",
+      "Bash(python3 -c \":*)",
+      "Bash(python3:*)",
+      "Bash(curl -s http://localhost:11434/api/tags)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(echo \"HOME=$HOME\")",
+      "Bash(echo \"USERPROFILE=$USERPROFILE\")",
+      "Read(///spicysnickers/WalterP/catmonitor/**)",
+      "Read(///spicysnickers/WalterP//**)",
+      "Bash(ollama --version)",
+      "Bash(tasklist)",
+      "Bash(ollama pull:*)",
+      "Bash(mkdir -p ~/catmonitor/data)",
+      "Bash(cp \"//spicysnickers/WalterP/catmonitor/data/catmonitor.db\" ~/catmonitor/data/catmonitor.db)",
+      "Bash(ollama list:*)",
+      "Bash(pip install:*)",
+      "Bash(curl -s http://localhost:8000/v1/models)",
+      "Bash(VLLM_URL=\"http://localhost:11434/v1/chat/completions\" VLLM_MODEL=\"qwen2.5:7b\" python3 -u agent/reflective_loop.py)",
+      "Bash(PYTHONIOENCODING=utf-8 VLLM_URL=\"http://localhost:11434/v1/chat/completions\" VLLM_MODEL=\"qwen2.5:7b\" python3 -u agent/reflective_loop.py)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\(''agent/reflective_loop.py''\\).read\\(\\)\\); print\\(''reflective_loop.py OK''\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\(''agent/loop.py''\\).read\\(\\)\\); print\\(''loop.py OK''\\)\")"
+    ]
+  }
+}
